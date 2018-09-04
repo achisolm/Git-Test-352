@@ -11,10 +11,18 @@ namespace Git_Test_CSCI_352
         static void Main(string[] args)
         {
             Random r = new Random();
-            int myNum = r.Next(1, 100);
+            
             int yourNum = -1;
             int guesses = 0;
-            Console.WriteLine("I'm thinking of a number between 1 and 100:");
+
+            Console.Write("Enter a start number: ");
+            int start = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter an end number: ");
+            int end = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("I'm thinking of a number between " + start + " and " + end);
+
+            int myNum = r.Next(1, 100);
+
             Console.WriteLine("For debug: myNum = " + myNum);
 
             while (yourNum != myNum)
