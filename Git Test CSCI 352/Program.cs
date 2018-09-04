@@ -21,7 +21,7 @@ namespace Git_Test_CSCI_352
             int end = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("I'm thinking of a number between " + start + " and " + end);
 
-            int myNum = r.Next(1, 100);
+            int myNum = r.Next(start, end);
 
             Console.WriteLine("For debug: myNum = " + myNum);
 
