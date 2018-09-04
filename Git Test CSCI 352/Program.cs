@@ -10,6 +10,8 @@ namespace Git_Test_CSCI_352
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+            Console.ReadKey();
         }
     }
 }
